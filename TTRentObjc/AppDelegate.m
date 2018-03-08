@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import <WeexSDK/WeexSDK.h>
+#import <WeexSDK/WXLog.h>
+#import <WeexSDK/WXDebugTool.h>
+#import <WeexSDK/WXAppConfiguration.h>
 
 @interface AppDelegate ()
 
@@ -18,6 +22,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
+}
+
+//初始化SDK 注册module protocol component
+- (void)initWeex{
+    //初始化SDK环境
+    [WXSDKEngine initSDKEnvironment];
+    /*自定义module*/
+    
+    /*初始化protocol*/
+    
+    
+    /*初始化Component*/
+    
 }
 
 
